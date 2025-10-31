@@ -4,7 +4,18 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+@font-face {
+  font-family: "EFCO-Brookshire-Regular"; /* Choose a name for your font */
+  src: local("EFCO-Brookshire-Regular"),
+    url("./fonts/EFCO-Brookshire-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
+@theme {
+  --font-sans: InterVariable, sans-serif;
+  --font-sans--font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+}
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
