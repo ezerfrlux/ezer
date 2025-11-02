@@ -61,7 +61,14 @@ const Skills = () => {
         </div>
         <div className='flex justify-center items-center text-center w-full  pr-[20%] pl-[20%] pt-10'>
           <p className="mt-8 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
-            Through self-study, I have developed strong expertise in modern web development technologies such as React, JavaScript, Next.js, Tailwind CSS, and Git. These tools allow me to build complete web applications, from functionality and logic to clean, modern, and responsive interfaces, managing projects efficiently and in an organized way. With this skill set, I can take a project from start to finish, ensuring fast and high-quality development.
+            Through self-study, I have developed strong expertise in modern web development technologies such as <span className='text-transparent bg-clip-text bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]'>
+              React
+            </span>, {" "}
+            <span className='text-transparent bg-clip-text bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]'>JavaScript</span>, {" "}
+             <span className='text-transparent bg-clip-text bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]'>Next.js</span>, {" "}
+             <span className='text-transparent bg-clip-text bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]'>Tailwind CSS</span>,
+              and <span className='text-transparent bg-clip-text bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]'>Git</span> 
+              . These tools allow me to build complete web applications, from functionality and logic to clean, modern, and responsive interfaces, managing projects efficiently and in an organized way. With this skill set, I can take a project from start to finish, ensuring fast and high-quality development.
           </p>
         </div>
       </div>

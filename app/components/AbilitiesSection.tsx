@@ -31,7 +31,7 @@ function AbilitiesSection() {
       </div>
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
 
-        <h2 className="text-center text-base/7 font-semibold text-blue-400">
+        <h2 className="text-center text-base/7 font-semibold text-transparent text-blue-400 bg-clip-text bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]">
           Abilities
         </h2>
 
