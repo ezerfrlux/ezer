@@ -19,7 +19,7 @@ const NavBar = () => {
       <header className="absolute inset-x-0 top-0 z-50">
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
-            <Link href="/" className="-m-1.5 p-1.5">
+            <Link href="/" className="-m-1.5 p-1.5 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-tr hover:from-[#ff80b5] hover:to-[#9089fc] transition-all duration-300">
               <span className="sr-only"></span>
               <h1 style={{ fontFamily: "EFCO-Brookshire-Regular" }}>Ezer Fr</h1>
             </Link>
@@ -36,7 +36,7 @@ const NavBar = () => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <Link key={item.name} href={item.href} className="text-sm/6 font-semibold text-white">
+              <Link key={item.name} href={item.href} className="text-sm/6 font-semibold text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-tr hover:from-[#ff80b5] hover:to-[#9089fc] transition-all duration-300">
                 {item.name}
               </Link>
             ))}

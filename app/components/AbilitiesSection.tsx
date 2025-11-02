@@ -40,8 +40,8 @@ function AbilitiesSection() {
         </p>
 
         <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
-          <div className="relative lg:row-span-2">
-            <div className="absolute inset-px rounded-lg bg-gray-900 opacity-30 lg:rounded-l-4xl" />
+          <div className="relative group lg:row-span-2">
+            <div className="absolute inset-px rounded-lg bg-gray-900 opacity-30 lg:rounded-l-5xl transition-opacity duration-500 group-hover:opacity-15" />
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
               <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
                 <p className="mt-2 text-lg font-medium tracking-tight text-white max-lg:text-center">
@@ -61,8 +61,8 @@ function AbilitiesSection() {
             </div>
             <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-white/15 lg:rounded-l-4xl" />
           </div>
-          <div className="relative max-lg:row-start-1">
-            <div className="absolute inset-px rounded-lg bg-gray-900 opacity-30 max-lg:rounded-t-4xl" />
+          <div className="relative group max-lg:row-start-1">
+            <div className="absolute inset-px rounded-lg bg-gray-900 opacity-30 max-lg:rounded-t-4xl transition-opacity duration-500 group-hover:opacity-15" />
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
               <div className="px-8 pt-8 sm:px-10 sm:pt-10">
                 <p className="mt-2 text-lg font-medium tracking-tight text-white max-lg:text-center">Performance</p>
@@ -80,8 +80,8 @@ function AbilitiesSection() {
             </div>
             <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-white/15 max-lg:rounded-t-4xl" />
           </div>
-          <div className="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
-            <div className="absolute inset-px rounded-lg bg-gray-900 opacity-30" />
+          <div className="relative group max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
+            <div className="absolute inset-px rounded-lg bg-gray-900 opacity-30 transition-opacity duration-500 group-hover:opacity-15" />
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
               <div className="px-8 pt-8 sm:px-10 sm:pt-10">
                 <p className="mt-2 text-lg font-medium tracking-tight text-white max-lg:text-center">Security</p>
@@ -99,8 +99,8 @@ function AbilitiesSection() {
             </div>
             <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-white/15" />
           </div>
-          <div className="relative lg:row-span-2">
-            <div className="absolute inset-px rounded-lg bg-gray-900 max-lg:rounded-b-4xl lg:rounded-r-4xl opacity-30" />
+          <div className="relative group lg:row-span-2">
+            <div className="absolute inset-px rounded-lg bg-gray-900 max-lg:rounded-b-4xl lg:rounded-r-4xl opacity-30 transition-opacity duration-500 group-hover:opacity-20" />
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
               <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
                 <p className="mt-2 text-lg font-medium tracking-tight text-white max-lg:text-center">

@@ -4,6 +4,7 @@ import Image from 'next/image';
 import porfilePicture from './../img/profile.png';
 import GradientDecorationBg from './GradientDecorationBg';
 import GradientDecorationBgDown from './GradientDecorationBgDown';
+import Link from 'next/link';
 
 const Hero = () => {
   const [pos, setPos] = useState({ x: 0, y: 0 });
@@ -33,9 +34,12 @@ const Hero = () => {
               Frontend developer with experience in React, TypeScript, and Tailwind. I create fast and easy-to-use interfaces.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a href="#" className="text-sm/6 font-semibold text-white">
+              <Link
+                href="/projects"
+                className="text-sm/6 font-semibold text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-tr hover:from-[#ff80b5] hover:to-[#9089fc] transition-all duration-300"
+              >
                 Projects <span aria-hidden="true">→</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
