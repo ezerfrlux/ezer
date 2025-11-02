@@ -1,3 +1,4 @@
+'use client'
 import { useEffect, useState } from "react";
 import type { Metadata } from 'next'
 
@@ -219,7 +220,7 @@ function AbilitiesSection() {
                         Layout()
                       </span>
                       <span className="text-blue-400">
-                        &#123; &#125; 
+                        &#123; &#125;
                       </span>
                     </code>
                   </div>
