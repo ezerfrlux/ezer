@@ -4,7 +4,10 @@ import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import GradientDecorationBg from '../components/GradientDecorationBg'
 import GradientDecorationBgDown from '../components/GradientDecorationBgDown'
-import profilePicture from '../img/profile.png'
+import { useMemo } from 'react'
+import SplitTextComponent from './animations/text/SplitTextComponent'
+import TiltedCard from "./../components/animations/img/TiltedCard"
+import { div } from 'motion/react-client'
 
 export default function About() {
   const [pos, setPos] = useState({ x: 0, y: 0 })
@@ -17,18 +20,17 @@ export default function About() {
     return () => window.removeEventListener('mousemove', handleMouseMove)
   }, [])
 
+  const splitText = useMemo(() => <SplitTextComponent className='text-transparent bg-clip-text bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]' text='Hello World!' />, [])
   return (
     <div className="relative isolate px-6 py-24 sm:py-32 lg:px-8 mt-20 mb-20">
       <GradientDecorationBg />
 
       <div className="mx-auto max-w-4xl flex flex-col-reverse lg:flex-row items-center gap-12">
         {/* Texto principal */}
-        <div className="w-full lg:w-3/5 text-center lg:text-left">
-          <h2 className="text-5xl font-semibold tracking-tight text-white sm:text-6xl mb-6">
-            About{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]">
-              Me
-            </span>
+        <div className="w-full lg:w-3/5 text-center lg:text-left ">
+          <h2 className="text-5xl font-semibold tracking-tight text-white sm:text-6xl mb-6 text-transparent bg-clip-text bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]">
+            {splitText}
+
           </h2>
 
           <p className="text-lg text-gray-400 leading-relaxed mb-6">
@@ -67,7 +69,7 @@ export default function About() {
           </div>
         </div>
 
-        <div
+        {/* <div
           className="w-64 h-64 sm:w-80 sm:h-80 relative rounded-full overflow-hidden ring-2 ring-[#ff80b5]/40 shadow-xl transition-transform duration-300"
         >
           <Image
@@ -76,7 +78,40 @@ export default function About() {
             fill
             className="object-cover rounded-full"
           />
-        </div>
+
+        </div> */}
+        <TiltedCard
+          imageSrc={"./profile.png"}
+          altText="Aaron Salinas"
+          captionText="Aaron Salinas"
+          containerHeight="300px"
+          containerWidth="300px"
+          imageHeight="300px"
+          imageWidth="300px"
+          rotateAmplitude={12}
+          scaleOnHover={1.2}
+          showMobileWarning={false}
+          showTooltip={true}
+          displayOverlayContent={true}
+          overlayContent={
+            <div className="relative group">
+              {/* Fondo transparente conservando bordes y forma */}
+              <div className="w-full ml-10 mt-10 absolute inset-px rounded-lg bg-gradient-to-tr from-[#e95c97] to-[#756bf8] opacity-10" />
+              <div className="relative flex h-full flex-col overflow-hidden ">
+                
+                  <p
+                    className="w-full pl-15 pr-15 pt-2 pb-2 rounded-2xl ml-10 mt-10 text-center font-extrabold"
+                    style={{ fontFamily: "EFCO-Brookshire-Regular" }}
+                  >
+                    Ezer Fr
+                  </p>
+              </div>
+            </div>
+
+
+
+          }
+        />
       </div>
 
       <GradientDecorationBgDown />
