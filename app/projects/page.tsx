@@ -18,7 +18,7 @@ const projectsPortfolio = [
     videoUrl: "",
     imageUrl: imageProject1,
     tech: ["Next.js", "Tailwind", "Framer Motion"],
-    link: "#",
+    link: "https://cubos-rubik-nicaragua-store.vercel.app/",
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const projectsPortfolio = [
     imageUrl: imageProject2,
     videoUrl: "",
     tech: ["React", "Next.js", "Tailwind"],
-    link: "#",
+    link: "https://courses-shopping-cart.netlify.app/",
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const projectsPortfolio = [
       "An modern style in this online guitar store using tailwind and next js.",
     imageUrl: imageProject3,
     tech: ["React", "Next.js", "CSS modules"],
-    link: "#",
+    link: "https://guitar-la-nextjs-ecru.vercel.app/",
   },
 ];
 
@@ -105,7 +105,7 @@ export default function projects() {
               <div className="p-6 flex flex-col justify-between grow">
                 <div>
                   <h3 className="text-lg font-semibold text-white">
-                    <a href={project.link}>
+                    <a href={project.link} target="_blank">
                       <span className="absolute inset-0" />
                       {project.title}
                     </a>
