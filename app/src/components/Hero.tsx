@@ -1,7 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
-import porfilePicture from './../../public/profile.png';
 import GradientDecorationBg from './GradientDecorationBg';
 import GradientDecorationBgDown from './GradientDecorationBgDown';
 import Link from 'next/link';
@@ -50,7 +49,7 @@ const Hero = () => {
         {/* Imagen de perfil */}
         <div className="sm:justify-center lg:w-[25%] mt-10 sm:w-full md:relative overflow-hidden rounded-full lg:absolute lg:ml-[50%]">
           <Image
-            src={porfilePicture}
+            src={"/profile.png"}
             alt="Profile"
             width={500}
             height={500}

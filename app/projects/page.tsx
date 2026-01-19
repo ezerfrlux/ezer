@@ -1,13 +1,10 @@
 'use client'
-import GradientDecorationBg from "../components/GradientDecorationBg"
-import GradientDecorationBgDown from "../components/GradientDecorationBgDown"
+import GradientDecorationBg from "../src/components/GradientDecorationBg"
+import GradientDecorationBgDown from "../src/components/GradientDecorationBgDown"
 import Image from "next/image"
-import LightRays from "../components/animations/bg/LightRays"
-import Shuffle from "../components/animations/text/Shuffle"
+import LightRays from "../src/components/animations/bg/LightRays"
+import Shuffle from "../src/components/animations/text/Shuffle"
 
-import imageProject1 from "./../img/project1.png"
-import imageProject2 from "./../img/project2.png"
-import imageProject3 from "./../img/project3.png"
 
 const projectsPortfolio = [
   {
@@ -16,7 +13,7 @@ const projectsPortfolio = [
     description:
       "A responsive rubik's sotre built with Next.js and Tailwind CSS, featuring smooth animations and a clean design.",
     videoUrl: "",
-    imageUrl: imageProject1,
+    imageUrl: "/img/project1.png",
     tech: ["Next.js", "Tailwind", "Framer Motion"],
     link: "https://cubos-rubik-nicaragua-store.vercel.app/",
   },
@@ -25,7 +22,7 @@ const projectsPortfolio = [
     title: "Online Courses Template",
     description:
       "An elegant online courses with shopping car functionality, using tailwind and next js.",
-    imageUrl: imageProject2,
+    imageUrl: "/img/project2.png",
     videoUrl: "",
     tech: ["React", "Next.js", "Tailwind"],
     link: "https://courses-shopping-cart.netlify.app/",
@@ -36,7 +33,7 @@ const projectsPortfolio = [
     videoUrl: "",
     description:
       "An modern style in this online guitar store using tailwind and next js.",
-    imageUrl: imageProject3,
+    imageUrl: "/img/project3.png",
     tech: ["React", "Next.js", "CSS modules"],
     link: "https://guitar-la-nextjs-ecru.vercel.app/",
   },

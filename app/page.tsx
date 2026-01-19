@@ -1,9 +1,9 @@
 "use client"
-import Hero from "./components/Hero"
-import Skills from "./components/Skills"
-import AbilitiesSection from "./components/AbilitiesSection"
-import GrayLine from "./components/GrayLine"
-import BallpitComoponent from './components/animations/balls/BallpitComoponent';
+import Hero from "./src/components/Hero"
+import Skills from "./src/components/Skills"
+import AbilitiesSection from "./src/components/AbilitiesSection"
+import GrayLine from "./src/components/GrayLine"
+import BallpitComoponent from './src/components/animations/balls/BallpitComoponent';
 import { useState, useEffect } from "react";
 import { log } from "console";
 

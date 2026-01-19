@@ -1,8 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import GradientDecorationBg from '../components/GradientDecorationBg'
-import GradientDecorationBgDown from '../components/GradientDecorationBgDown'
+import GradientDecorationBg from '../src/components/GradientDecorationBg'
+import GradientDecorationBgDown from '../src/components/GradientDecorationBgDown'
 
 export default function Contact() {
   const [formData, setFormData] = useState({

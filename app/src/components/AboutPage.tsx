@@ -1,11 +1,11 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import GradientDecorationBg from '../components/GradientDecorationBg'
-import GradientDecorationBgDown from '../components/GradientDecorationBgDown'
+import GradientDecorationBg from './GradientDecorationBg'
+import GradientDecorationBgDown from './GradientDecorationBgDown'
 import { useMemo } from 'react'
 import SplitTextComponent from './animations/text/SplitTextComponent'
-import TiltedCard from "./../components/animations/img/TiltedCard"
+import TiltedCard from "./animations/img/TiltedCard"
 
 export default function About() {
   const [pos, setPos] = useState({ x: 0, y: 0 })

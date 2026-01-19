@@ -1,12 +1,12 @@
 
 "use client"
 import { useEffect, useState } from 'react'
-import AbilitiesSection from '../components/AbilitiesSection'
-import AboutPage from '../components/AboutPage'
-import GrayLine from '../components/GrayLine'
-import Hobbies from '../components/Hobbies'
-import Skills from '../components/Skills'
-import Plasma from '../components/animations/bg/Plasma'
+import AbilitiesSection from '../src/components/AbilitiesSection'
+import AboutPage from '../src/components/AboutPage'
+import GrayLine from '../src/components/GrayLine'
+import Hobbies from '../src/components/Hobbies'
+import Skills from '../src/components/Skills'
+import Plasma from '../src/components/animations/bg/Plasma'
 export default function About() {
 
   const [isMobile, setIsMobile] = useState(false)
